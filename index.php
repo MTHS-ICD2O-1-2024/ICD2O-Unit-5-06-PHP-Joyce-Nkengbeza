@@ -45,7 +45,7 @@ body>
   </header>
   <main class="mdl-layout__content">
     <div class="right-image">
-      <img src="./images/loop.png" alt="loops" />
+      <img src="./images/mul.jpg" alt="multiplication" />
     </div>
     <form action="answer.php" method="get">
       <br />

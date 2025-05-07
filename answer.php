@@ -43,7 +43,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/loop.png" alt="loop" />
+        <img src="./images/mul.jpg" alt="multiplication" />
       </div>
       <div class="page-content-php">
         <div id="user-info">
