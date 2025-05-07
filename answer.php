@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit3-01-HTML-MDL -->
+<!-- ICS2O-Unit5-06-PHP-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area Of Trapezod, PHP " />
+  <meta name="description" content="Multiplication with while loops, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Joyce Nkengbeza" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16new.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Area Of Trapezoid In PHP</title>
+  <title>Multiplication with while loops, in PHP</title>
 </head>
 
 <body>
@@ -38,28 +38,33 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area Of Trapezoid, PHP</span>
+        <span class="mdl-layout-title">Multiplication with while loops, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/trapezoid.svg" alt="Area of Trapezoid Image" />
+        <img src="./images/loop.png" alt="loop" />
       </div>
       <div class="page-content-php">
-        <div id="area-trapezoid">
+        <div id="user-info">
           <?php
-          $abase = $_GET["a-base"];
-          $bbase = $_GET["b-base"];
-          $height = $_GET["height-length"];
-          // process
-          $area = (($abase + $bbase) / 2) * $height;
+          $firstNumber = $_GET["numberone"];
+          $secondNumber = $_GET["numbertwo"];
+          $answer = 0;
+          $actualFirstNumber = $firstNumber;
 
-          // output 
-          echo "The area of the Trapezoid is:" . $area . "cm²";
+          // process
+          while ($firstNumber >= 1) {
+            $answer = $answer + $secondNumber;
+            $firstNumber = $firstNumber - 1;
+          }
+          // output
+          echo "If the first numbers are " . $actualFirstNumber . " and " . $secondNumber . "<br/>";
+          echo "The number is: " . $answer;
           ?>
         </div>
         <div class="page-content-answer">
-          <a href="./index.php">Return ...</a>
+          <a href="./index.php">Return...</a>
         </div>
       </div>
     </main>
